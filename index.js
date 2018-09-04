@@ -5,9 +5,9 @@ function takeANumber(line, name) {
 
 var currentLineNumber = 0;
 function newTakeANumber(line) {
-  line.push(name)
-  
-  return "Welcome, " + name + ". You are number " + line.length + " in line."
+  currentLineNumber = currentLineNumber + 1
+  line.push(currentLineNumber)
+  return "Your number is " + currentLineNumber 
 }
 
 function nowServing(line) {
