@@ -3,6 +3,13 @@ function takeANumber(line, name) {
   return "Welcome, " + name + ". You are number " + line.length + " in line."
 }
 
+var currentLineNumber = 0;
+function newTakeANumber(line) {
+  line.push(name)
+  
+  return "Welcome, " + name + ". You are number " + line.length + " in line."
+}
+
 function nowServing(line) {
   if (line.length === 0) {
     return "There is nobody waiting to be served!"
